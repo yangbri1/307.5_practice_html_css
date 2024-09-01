@@ -6,6 +6,7 @@
     /*justify-content: flex-start;*/
     
 }
+
 .section1{
     background-color: rgb(40, 40, 40); /*redundant as html has already established color? */
     /*text-align:left; default */
@@ -28,6 +29,12 @@ h3{
     color:lightskyblue
 } */
 
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
 p{
     color:grey
 } 
@@ -41,10 +48,10 @@ aside{
  
  aside > p{
     margin: 0.5rem;
+    font-size:small;
  }
 
  hr{
     border: 1px solid lightgrey;
-    display: block;
-    margin-left: auto;
+    
  }
