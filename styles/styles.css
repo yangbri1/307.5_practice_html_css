@@ -1,5 +1,5 @@
 .main_container{
-    display: inline-block;
+    /* display: inline-block; */
     position: relative;
     flex-wrap: wrap;
     overflow: hidden;
@@ -7,19 +7,19 @@
     
 }
 .section1{
-    /* background-color: rgb(40, 40, 40); redundant as html has already established color? */
+    background-color: rgb(40, 40, 40); /*redundant as html has already established color? */
     /*text-align:left; default */
    
 }
 
-#box1{background-color:blue;; position: relative;}
+#box1{background-color:blue; max-width: 50%;}
 #box2{background-color:green; max-width: 50%; }
 #box3{background-color:palevioletred; }
 
 html{
     background-color:rgb(40, 40, 40);
 }
-/*
+
 h1{
     color:white;
 }
@@ -29,5 +29,5 @@ h3{
 }
 p{
     color:grey
-}*/
+}
 
