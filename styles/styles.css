@@ -12,7 +12,7 @@
    
 }
 
-#box1{background-color:blue; max-width: 50%;}
+#box1{background-color:blue; color: red; text-align:center;}
 #box2{background-color:green; max-width: 50%; }
 #box3{background-color:palevioletred; }
 
@@ -20,14 +20,31 @@ html{
     background-color:rgb(40, 40, 40);
 }
 
-h1{
+/* h1{
     color:white;
 }
 
 h3{
     color:lightskyblue
-}
+} */
+
 p{
     color:grey
-}
+} 
 
+aside{
+    width: 40%;
+    float: right;
+    background-color:tan
+    
+ }
+ 
+ aside > p{
+    margin: 0.5rem;
+ }
+
+ hr{
+    border: 1px solid lightgrey;
+    display: block;
+    margin-left: auto;
+ }
