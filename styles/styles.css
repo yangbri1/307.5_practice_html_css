@@ -12,7 +12,7 @@
    
 }
 
-#box1{background-color:blue; color: red; text-align:center;}
+#box1{background-color:blue; color: red; text-align:start;}
 #box2{background-color:green; max-width: 50%; }
 #box3{background-color:palevioletred; }
 
