@@ -5,11 +5,13 @@
     overflow: hidden;
     /*justify-content: flex-start;*/
     
+    
 }
 
 .section1{
     background-color: rgb(40, 40, 40); /*redundant as html has already established color? */
     /*text-align:left; default */
+    color:grey;
    
 }
 
@@ -17,32 +19,33 @@
 #box2{background-color:green; max-width: 50%; }
 #box3{background-color:palevioletred; }
 
-html{
-    background-color:rgb(40, 40, 40);
-}
-
-/* h1{
-    color:white;
-}
-
-h3{
-    color:lightskyblue
-} */
-
-
 nav{
     display: flex;
     justify-content: flex-end;
 }
 
-p{
-    color:grey
+html{
+    background-color:rgb(40, 40, 40);
+}
+
+h1, h4{
+    color:white;
+}
+
+h3{
+    color:lightskyblue
 } 
+
+/* p{
+    color:grey
+}  */
 
 aside{
     width: 40%;
-    float: right;
-    background-color:tan
+    float: right; 
+    background-color:tan;
+    /* display: flex;
+    flex-direction: column; */
     
  }
  
@@ -55,3 +58,14 @@ aside{
     border: 1px solid lightgrey;
     
  }
+
+.section3{
+    /*float:right;  text-align: end; */
+    color:grey;
+    /* display: flex;
+    flex-direction: column;
+    align-items:flex-end; */
+    display:inline;
+    
+;
+}
