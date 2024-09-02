@@ -74,6 +74,7 @@ hr{
         list-style-type: square;
         color: red;
     } */
+     width: 33%;
     
 }
 
@@ -98,15 +99,23 @@ hr{
     border: .1px solid;
     width: 10px;
     height: 10px;
+    /* padding:0;
+    margin: 0;
+    border-collapse:collapse; */
     /* margin-right:auto; */
     
 }
 
 #gs1{background-color:rgb(11, 88, 133);}
-
+#gs2{background-color:rgb(10, 140, 184);  }
+#gs3{background-color:green;  }
+#gs4{background-color:orange; }
+#gs5{background-color:red;  }
 
 table{
     border: transparent;
+    text-align: left;
+    /* width: 33% -- applying width: 33% to the parent section3 class block solves the sizing issue */
 }
 
 @media only screen and (orientation: landscape) {
