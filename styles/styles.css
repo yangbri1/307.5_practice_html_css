@@ -69,12 +69,44 @@ hr{
     align-items:flex-end; */
     display:flex;
     flex-direction: column;
-    justify-content:center;
-    ul{
+    justify-content:flex-end;
+    /* ul{
         list-style-type: square;
         color: red;
-    }
+    } */
     
+}
+
+/* flex-grow -- try it later */
+.bars{
+    border: .1px transparent;
+    /* width: 10px; */
+    height: 20px;
+    /* text-align:center; */
+    /* font-size: 30px; */
+    /* word-wrap:break-word; -- cuts off excess text but resolved by disabling width */
+    margin-right:auto; /* moved to here as margin-auto was prevalent in all of its child */
+}
+
+#ps1{background-color:rgb(11, 88, 133); padding-left:90%; }
+#ps2{background-color:rgb(10, 140, 184); padding-left:80%; }
+#ps3{background-color:green; padding-left:93%; }
+#ps4{background-color:orange; padding-left:80%; }
+#ps5{background-color:red; padding-left:70%; }
+
+.boxes{
+    border: .1px solid;
+    width: 10px;
+    height: 10px;
+    /* margin-right:auto; */
+    
+}
+
+#gs1{background-color:rgb(11, 88, 133);}
+
+
+table{
+    border: transparent;
 }
 
 @media only screen and (orientation: landscape) {
