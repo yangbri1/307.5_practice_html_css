@@ -15,9 +15,10 @@
    
 }
 
-#box1{background-color:blue; color: red; text-align:start;}
+#box1{background-color:blue; padding-top: 5px;  text-align:start; }
 #box2{background-color:green; max-width: 50%; }
 #box3{background-color:palevioletred; }
+
 
 nav{
     display: flex;
@@ -33,7 +34,8 @@ h1, h4{
 }
 
 h3{
-    color:lightskyblue
+    color:lightskyblue;
+    text-align:justify;
 } 
 
 /* p{
@@ -47,17 +49,17 @@ aside{
     /* display: flex;
     flex-direction: column; */
     
- }
+}
  
- aside > p{
+aside > p{
     margin: 0.5rem;
     font-size:small;
- }
+}
 
- hr{
+hr{
     border: 1px solid lightgrey;
     
- }
+}
 
 .section3{
     /*float:right;  text-align: end; */
@@ -65,7 +67,24 @@ aside{
     /* display: flex;
     flex-direction: column;
     align-items:flex-end; */
-    display:inline;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    ul{
+        list-style-type: square;
+        color: red;
+    }
     
-;
 }
+
+@media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
+  @media only screen and (orientation: portrait) {
+    body {
+      background-color: pink;
+    }
+  }
