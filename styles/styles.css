@@ -106,8 +106,8 @@ hr{
     
 }
 
-#gs1{background-color:rgb(11, 88, 133);}
-#gs2{background-color:rgb(10, 140, 184);  }
+#gs1{background-color:rgb(11, 88, 133); }
+#gs2{background-color:rgb(10, 140, 184); }
 #gs3{background-color:green;  }
 #gs4{background-color:orange; }
 #gs5{background-color:red;  }
@@ -115,8 +115,24 @@ hr{
 table{
     border: transparent;
     text-align: left;
+    
     /* width: 33% -- applying width: 33% to the parent section3 class block solves the sizing issue */
 }
+/* #box7 td{ border: solid;} */
+
+.circles{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+#box{
+    margin-bottom:10px;
+}
+/*
+#box8 td{
+    border: solid; -- used to check why the French and Spanish were out of line -- extra <td> </td> by accident
+    
+} */
 
 @media only screen and (orientation: landscape) {
     body {
