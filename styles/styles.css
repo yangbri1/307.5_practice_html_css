@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     overflow: hidden;
     /*justify-content: flex-start;*/
+    color:grey;
     
     
 }
@@ -11,8 +12,7 @@
 .section1{
     background-color: rgb(40, 40, 40); /*redundant as html has already established color? */
     /*text-align:left; default */
-    color:grey;
-   
+    width: 100%;
 }
 
 #box1{background-color:blue; padding-top: 5px;  text-align:start; }
@@ -29,13 +29,13 @@ html{
     background-color:rgb(40, 40, 40);
 }
 
-h1, h4{
+h1, h4, h5{
     color:white;
 }
 
 h3{
     color:lightskyblue;
-    text-align:justify;
+    /* text-align:justify; */
 } 
 
 /* p{
@@ -61,20 +61,30 @@ hr{
     
 }
 
-.section3{
-    /*float:right;  text-align: end; */
-    color:grey;
+.section2{
     /* display: flex;
-    flex-direction: column;
-    align-items:flex-end; */
+    justify-content:flex-start; */
+    float:left;
+    
+    width:70%;
+}
+
+#box4{ }
+.section3{
+    /* float:right works but will it be able to dynamically resize/responsive like flex? */
+    /* float:right; text-align: end;
+    color:grey; */
+
     display:flex;
     flex-direction: column;
-    justify-content:flex-end;
+    /* justify-content:flex-end; */
+    /* align-items:flex-end;  */
+
     /* ul{
         list-style-type: square;
         color: red;
     } */
-     width: 33%;
+     width: 30%;
     
 }
 
@@ -125,9 +135,11 @@ table{
     height: 20px;
     border-radius: 50%;
 }
-#box{
+
+/* #box8{
     margin-bottom:10px;
-}
+} */
+
 /*
 #box8 td{
     border: solid; -- used to check why the French and Spanish were out of line -- extra <td> </td> by accident
@@ -140,8 +152,15 @@ table{
     }
   }
   
-  @media only screen and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
     body {
-      background-color: pink;
+        background-color: pink;
     }
-  }
+}
+
+/* changes width to 100% view when the viewport is 426px or smaller (mobile[large]) */
+@media screen and (max-width: 426px){
+    .section2, .section3{
+        width: 100%; /* flex: 100%?*/
+    }
+}
