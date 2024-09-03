@@ -62,14 +62,31 @@ hr{
 }
 
 .section2{
-    /* display: flex;
-    justify-content:flex-start; */
+    display: flex;
+    justify-content:flex-start;
+    flex-direction:column;
     float:left;
-    
     width:70%;
-}
+    /* margin-bottom:auto; */
+    .boxes{
+        height: 20px;
+        width: 20px;
+        display:flex;
+        justify-content:start;
 
-#box4{ }
+    }
+    .circles{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+     }
+}
+/* .section2 > h4{
+    padding-left:0%;
+} */
+
+#box4{font-size::0.2pt}
+#description1{color:deeppink;}
 .section3{
     /* float:right works but will it be able to dynamically resize/responsive like flex? */
     /* float:right; text-align: end;
@@ -84,8 +101,9 @@ hr{
         list-style-type: square;
         color: red;
     } */
-     width: 30%;
-    
+     width: 30%;  
+     margin-bottom:auto;
+
 }
 
 /* flex-grow -- try it later */
@@ -121,6 +139,8 @@ hr{
 #gs3{background-color:green;  }
 #gs4{background-color:orange; }
 #gs5{background-color:red;  }
+
+#ls_filler{background-color:black; }
 
 table{
     border: transparent;
